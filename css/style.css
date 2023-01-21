@@ -27,6 +27,7 @@ body{
 .logo{
     margin-left: 100px;
 }
+
 .logo i{
     font-size: 20px;
     font-weight: 700;
@@ -83,29 +84,37 @@ body{
     cursor: pointer;
 }
 
-.content{
-    width: 90%;
-    height: 70%;
+
+
+.body-section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.body-details{
+    padding: 40px;
+}
+
+
+.body-section img{
+    width: 420px;
     position: absolute;
-    top: 30%;
-    left: 50px;
-    color: #fff;
+    right: 50px;
+    bottom: 100px;
 }
 
-.content-info{
-    width: 50%;
-    float: left;
-    padding-left: 50px;
-}
-
-.content-info h3{
+.body-section h3{
     margin-top: 50px;
     font-size: 20px;
     color: #fff;
     font-weight: 700;
 }
 
-.content-info h1{
+.body-section h1{
     font-size: 51px;
     position: relative;
     color: #fff;
@@ -116,16 +125,17 @@ body{
 }
 
 
-.content-info h2{
+.body-section h2{
     margin-top: 10px;
     letter-spacing: 1px;
     font-size: 27px;
+    color: #fff;
 }
 
-.content-info p{
-    width: 57%;
+.body-section p{
+    width: 30%;
     margin-top: 30px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 20px;
     letter-spacing: 1px;
     color: #fff;
@@ -133,7 +143,7 @@ body{
 
 .btn-group{
     display: flex;
-    width: 100%;
+    width: 58%;
     position: relative;
     margin-top: 30px;
 }
@@ -161,6 +171,7 @@ body{
 
 .btn-group .play-btn i{
     background-color: #CFB3FF;
+    color: #fff;
     border-radius: 30px;
     font-size: 22px;
     padding: 12px;
@@ -174,10 +185,6 @@ body{
 }
 
 
-.picture img{
-    width: 40%;
-    margin-left: 113px;
-}
 
 
 
@@ -201,32 +208,60 @@ section{
     letter-spacing: 2px;
 }
 
-.slider-part{
-    display: inline-block;
-    display: flex;
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper i{
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    line-height: 45px;
+    background: #CFB3FF;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child{
+    left: -23px;
+}
+
+.wrapper i:last-child{
+    right: -23px;
+}
+.wrapper .carousel{
+    font-size: 0;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging{
+    cursor: pointer;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img{
+    pointer-events: none;
+}
+
+.carousel img{
+    height: 70px;
+    object-fit: cover;
     justify-content: space-between;
     align-items: center;
-    margin-top: 35px;
+    padding: 20px;
+    width: calc(50% / 3);
 }
 
-.slider-part ul li{
-    display: inline-block;
-    color: #fff;
-    padding: 0 25px;
-    cursor: pointer;
-    line-height: 80px;
-    align-items: center;
-}
-
-.slider-part ul li i{
-    background-color: #CFB3FF;
-    padding: 15px;
-    font-size: 15px;
-    border-radius: 55px;
-}
-
-.slider-part ul li img{
-    width: 120px;
+.carousel img:first-child{
+    margin-left: 0px;
 }
 
 
@@ -284,6 +319,10 @@ section{
 }
 
 
+
+
+
+
 /*------------------------Company Websites part------------*/
 .agency-part{
     display: inline-block;
@@ -326,6 +365,9 @@ section{
 
 
 
+
+
+
 /*-------------------Services Part--------------------*/
 .color-change{
     background-color: #956AE1;
@@ -353,14 +395,13 @@ section{
 }
 
 .box-container .box:hover{
-    transform: scale(1.02);
     background-color: transparent;
     border: 4px dotted #B28AF8;
 }
 
-.box-container .box .services-details i{
-    font-size: 35px;
-    color: #fff;
+.box-container .box .services-details img{
+    width: 60px;
+    border-radius: 10px;
 }
 
 .box-container .box .services-info{
@@ -377,6 +418,8 @@ section{
 .box-container .box .services-info p{
     font-size: 13px;
 }
+
+
 
 
 
@@ -443,22 +486,21 @@ section{
     color: #fff;
     background-color: #CFB3FF;
     padding: 12px;
-    font-size: 20px;
-    border-radius: 30px;
+    font-size: 18px;
+    border-radius: 40px;
 }
 
 
 
+
+
+/*-----------------------------------Footer Part-------------------------*/
 footer{
-    
     color: #fff;
     padding: 90px 0 30px;
     font-size: 13px;
     line-height: 20px;
 }
-
-
-
 
 .heading-part h1{
     margin-bottom: 20px;
@@ -566,8 +608,169 @@ hr{
     border-radius: 30px;
 }
 
+.copy-right{
+    position: absolute;
+    right: 0;
+    padding: 90px;
+}
 
 
+
+
+
+/*-------------------------------------Responsive Part-------------------------*/
+
+@media (min-width: 1281px) { 
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .agency-part ul{
+        width: 65%;
+        padding: 15px;
+      }
+    
+      .agency-part ul li{
+        padding: 0 35px;
+    }
+    
+      .agency-part ul li h1{
+        font-size: 20px;
+      }
+
+
+      .box-part{
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+   .header{
+    width: 100%;
+    height: 80vh;
+   }
+
+  .header .navbar{
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+
+
+  .body-section img{
+    visibility: hidden;
+  }
+
+  .btn-group{
+    width: 500px;
+  }
+
+  .about-info{
+    display: block;
+  }
+
+  .about-info .about-pic img{
+    visibility: hidden;
+  }
+
+  .about-info .about-details{
+    width: 100%;
+  }
+
+  .about-info .about-details button{
+    width: 100%;
+  }
+
+  .color-change{
+    width: 100%;
+  }
+
+  .box-container{
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  .agency-part ul{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .agency-part ul li{
+    padding: 0 25px;
+}
+
+  .agency-part ul li h1{
+    font-size: 20px;
+  }
+
+  .box-part{
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+
+  .row{
+    font-size: 10px;
+  }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .header .navbar{
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+
+
+  .body-section img{
+    visibility: hidden;
+  }
+
+
+  .btn-group{
+    width: 500px;
+  }
+
+  .color-change{
+    width: 100%;
+  }
+
+  .box-container{
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  .agency-part ul{
+    width: 100%;
+    padding: 10px;
+  }
+
+
+.agency-part ul li{
+    padding: 0 55px;
+}
+
+  .agency-part ul li h1{
+    font-size: 10px;
+  }
+
+  .box-part{
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+
+  
+}
 
 
 
