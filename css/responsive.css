@@ -1,0 +1,224 @@
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .header{
+      display: block;
+    }
+    
+    .body-section .body-details .content-info{
+      display: block;
+  }
+
+  .body-section .content-info .content-text p{
+      width: 100%
+  }
+
+  .body-section .content-info .content-text .btn-group{
+      width: 100%;
+  }
+
+  .about-info{
+   display: block;
+  }
+
+  .about-info .about-details{
+   width: 100%;
+  }
+
+  .agency-part ul{
+   width: 100%;
+   padding: 10px;
+  }
+
+  .agency-part ul li{
+   padding: 0 60px;
+  }
+
+   .agency-part ul li h1{
+       font-size: 15px;
+   }
+   
+   .agency-part ul li p{
+       font-size: 7px;
+   }
+
+   .box-part{
+       display: block;
+   }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .header .navbar a{
+      display: block;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .body-section .body-details .content-info{
+      display: block;
+  }
+
+  .body-section .content-info .content-text p{
+      width: 100%
+  }
+
+  .body-section .content-info .content-text .btn-group{
+      width: 100%;
+  }
+
+  .about-info{
+   display: block;
+  }
+
+  .about-info .about-details{
+   width: 100%;
+  }
+
+  .agency-part ul{
+   width: 100%;
+   padding: 10px;
+  }
+
+  .agency-part ul li{
+   padding: 0 60px;
+  }
+
+   .agency-part ul li h1{
+       font-size: 15px;
+   }
+   
+   .agency-part ul li p{
+       font-size: 7px;
+   }
+
+   .box-part{
+       display: block;
+   }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+
+    .header .navbar a{
+      display: block;
+    }
+
+   .body-section .body-details .content-info{
+       display: block;
+   }
+
+   .body-section .content-info .content-text p{
+       width: 100%
+   }
+
+   .body-section .content-info .content-text .btn-group{
+       width: 100%;
+   }
+
+   .about-info{
+    display: block;
+   }
+
+   .about-info .about-details{
+    width: 100%;
+   }
+
+   .agency-part ul{
+    width: 100%;
+    padding: 10px;
+   }
+
+   .agency-part ul li{
+    padding: 0 60px;
+   }
+
+    .agency-part ul li h1{
+        font-size: 15px;
+    }
+    
+    .agency-part ul li p{
+        font-size: 7px;
+    }
+
+    .box-part{
+        display: block;
+    }
+}
+
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    .body-section .body-details .content-info{
+      display: block;
+  }
+
+  .body-section .content-info .content-text p{
+      width: 100%
+  }
+
+  .body-section .content-info .content-text .btn-group{
+      width: 100%;
+  }
+
+  .about-info{
+   display: block;
+  }
+
+  .about-info .about-details{
+   width: 100%;
+  }
+
+  .agency-part ul{
+   width: 100%;
+   padding: 10px;
+  }
+
+  .agency-part ul li{
+   padding: 0 60px;
+  }
+
+   .agency-part ul li h1{
+       font-size: 15px;
+   }
+   
+   .agency-part ul li p{
+       font-size: 7px;
+   }
+
+   .box-part{
+       display: block;
+   }
+}  

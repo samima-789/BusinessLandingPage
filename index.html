@@ -6,45 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Landing Page</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
-    <div class="header">
-        <div class="navbar">
-            
-            <div class="menu">
-                <div class="logo">
-                    <i class="fa-brands fa-google"></i>
-                </div>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Blog</li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="contact-btn">Contact us</div>
-        </div>  
-        
+    <header class="header">
+    
+        <nav class="navbar">
+            <a href="#" class="logo"><i class="fa-brands fa-google"></i></a>
+            <a href="#">home</a>
+            <a href="#">about us</a>
+            <a href="#">services</a>
+            <a href="#">blog</a>
+            <a href="#">portfolio</a>
+            <a href="#">contact us</a> 
+        </nav>
+    
+        <div class="contact">
+            <a href="#">Contact us</a>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    
+    </header>
+
+    <!-------------------------------Body section ------------------------------------------->
    <section class="body-section">
+    <!-- <img id="bg-img1" src="img/bg-img1.png">
+    <img id="bg-img2" src="img/bg-img2.png"> -->
         <div class="body-details">
             <div class="content-info">
-                <h3>We help to</h3>
-                <h1>Solve Clients</h1>
-                <h2>Problems</h2>
-                <p>Our Activate suite of business apps gives your lorem ipsum dolor sit amet, consecteture.</p>
-   
-                <div class="btn-group">
-                    <div class="portfolio-btn">Our Portfolio</div>
-                    <div class="play-btn">
-                        <i class="fa-solid fa-play"></i>
+                <div class="content-text">
+                    <h3>We help to</h3>
+                    <h1>Solve Clients</h1>
+                    <h2>Problems</h2>
+                    <p>Our Activate suite of business apps gives your lorem ipsum dolor sit amet, consecteture.</p>
+    
+                    <div class="btn-group">
+                        <div class="portfolio-btn">Our Portfolio</div>
+                        <div class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
                     </div>
                 </div>
-                 <img src="img/pic0.png">
+                 <div class="content-image">
+                    <img class="content-img" src="img/pic0.png">
+                 </div>
             </div>
         </div>
 </div>
@@ -59,20 +69,27 @@
                     <h1>With There Marketing</h1>
                 </div>
 
-                <div class="wrapper">
-            <i class="fa-solid fa-angle-left"></i>
-            <div class="carousel">
-                <img src="img/sl1.png">
-                <img src="img/sl2.png">
-                <img src="img/sl3.png">
-                <img src="img/sl4.png">
-                <img src="img/sl5.png">
-                <img src="img/sl1.png">
-                <img src="img/sl2.png">
-                <img src="img/sl3.png">
-            </div>
-            <i class="fa-solid fa-angle-right"></i>
+
+
+           <div class="wrapper">
+                <i class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                   <img src="img/sl1.png">
+                   <img src="img/sl2.png">
+                   <img src="img/sl3.png">
+                   <img src="img/sl4.png">
+                   <img src="img/sl5.png">
+                   <img src="img/sl1.png">
+                   <img src="img/sl2.png">
+                   <img src="img/sl3.png">
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
         </div>
+
+
+
+
+
                 <div class="about-info">
                     <div class="about-pic">
                         <img src="img/pic1.png">
@@ -181,57 +198,85 @@
         <!--------------------------Portfolio part----------------->
         <section class="color-change">
             <div class="heading-part">
-                <p>Digital Marketing Agency & Software Development</p>
-                <br>
-                <h1>Company Website Design Full Services</h1>
+                <img class="bg-img3" src="img/bg-img3.png">
+                <p>Awsome Portfolio</p>
+                <h1>We Have A Great Portfolio To Check</h1>
             </div>
 
-            <div class="box-part">
-
-                <div class="boxs">
-                    <div class="image">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="boxs">
+                        <div class="image">
                         <img src="img/portfolio1.png" alt="">
-                    </div>
-                    <div class="content-part">
+                        </div>
+                        <div class="content-part">
                         <a href="#" class="title">Web Design Proect</a>
                         <p>UX/UI Design</p>
+                        </div>
                     </div>
                 </div>
-        
-                <div class="boxs">
-                    <div class="image">
+            
+                <div class="item">
+                    <div class="boxs">
+                        <div class="image">
                         <img src="img/portfolio2.png" alt="">
-                    </div>
-                    <div class="content-part">
+                        </div>
+                        <div class="content-part">
                         <a href="#" class="title">Web Design Proect</a>
                         <p>UX/UI Design</p>
+                        </div>
                     </div>
                 </div>
-        
-                <div class="boxs">
-                    <div class="image">
+            
+                <div class="item">
+                    <div class="boxs">
+                        <div class="image">
                         <img src="img/portfolio3.png" alt="">
-                    </div>
-                    <div class="content-part">
+                        </div>
+                        <div class="content-part">
                         <a href="#" class="title">Web Design Proect</a>
                         <p>UX/UI Design</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="boxs">
-                    <div class="image">
+            
+                <div class="item">
+                    <div class="boxs">
+                        <div class="image">
                         <img src="img/portfolio4.png" alt="">
-                    </div>
-                    <div class="content-part">
+                        </div>
+                        <div class="content-part">
                         <a href="#" class="title">Web Design Proect</a>
                         <p>UX/UI Design</p>
+                        </div>
                     </div>
                 </div>
+            
+                <div class="item">
+                    <div class="boxs">
+                        <div class="image">
+                        <img src="img/portfolio1.png" alt="">
+                        </div>
+                        <div class="content-part">
+                        <a href="#" class="title">Web Design Proect</a>
+                        <p>UX/UI Design</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="item">
+                    <div class="boxs">
+                        <div class="image">
+                        <img src="img/portfolio2.png" alt="">
+                        </div>
+                        <div class="content-part">
+                        <a href="#" class="title">Web Design Proect</a>
+                        <p>UX/UI Design</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            <div class="slider">
-                <i class="fa-solid fa-chevron-left"></i>
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
         </section>
 
 
@@ -244,52 +289,82 @@
                 <h1>Our Blog & Article</h1>
             </div>
 
-            <div class="box-part">
-
-                <div class="boxs">
-                    <div class="image">
-                        <img src="img/portfolio1.png" alt="">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="boxs" style="width: 260px; height: 380px;">
+                                <div class="image">
+                                <img src="img/img1.png" alt="">
+                                </div>
+                                <div class="content-part" style="padding: 15px;">
+                                <p style="text-align: left; color: #fff; margin-top: 10px;">August 27, 2020</p>
+                                <h3 style="color: #fff; margin-bottom: 30px;">Why We Decided To Create Build Your DXP</h3>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="item">
+                            <div class="boxs" style="width: 260px; height: 380px;">
+                                <div class="image">
+                                <img src="img/img2.png" alt="">
+                                </div>
+                                <div class="content-part" style="padding: 15px;">
+                                    <p style="text-align: left; color: #fff; margin-top: 10px;">August 27, 2020</p>
+                                    <h3 style="color: #fff; margin-bottom: 30px;">Why We Decided To Create Build Your DXP</h3>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="item">
+                            <div class="boxs" style="width: 260px; height: 380px;">
+                                <div class="image">
+                                <img src="img/img3.png" alt="">
+                                </div>
+                                <div class="content-part" style="padding: 15px;">
+                                    <p style="text-align: left; color: #fff; margin-top: 10px;">August 27, 2020</p>
+                                    <h3 style="color: #fff; margin-bottom: 30px;">Why We Decided To Create Build Your DXP</h3>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="item">
+                            <div class="boxs" style="width: 260px; height: 380px;">
+                                <div class="image">
+                                <img src="img/img4.png" alt="">
+                                </div>
+                                <div class="content-part" style="padding: 15px;">
+                                    <p style="text-align: left; color: #fff; margin-top: 10px;">August 27, 2020</p>
+                                    <h3 style="color: #fff; margin-bottom: 30px;">Why We Decided To Create Build Your DXP</h3>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="item">
+                            <div class="boxs" style="width: 260px; height: 380px;">
+                                <div class="image">
+                                <img src="img/img1.png" alt="">
+                                </div>
+                                <div class="content-part" style="padding: 15px;">
+                                    <p style="text-align: left; color: #fff; margin-top: 10px;">August 27, 2020</p>
+                                    <h3 style="color: #fff; margin-bottom: 30px;">Why We Decided To Create Build Your DXP</h3>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="item">
+                            <div class="boxs" style="width: 260px; height: 380px;">
+                                <div class="image">
+                                <img src="img/img2.png" alt="">
+                                </div>
+                                <div class="content-part" style="padding: 15px;">
+                                    <p style="text-align: left; color: #fff; margin-top: 10px;">August 27, 2020</p>
+                                    <h3 style="color: #fff; margin-bottom: 30px;">Why We Decided To Create Build Your DXP</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="content-part">
-                        <a href="#" class="title">Web Design Proect</a>
-                        <p>UX/UI Design</p>
-                    </div>
-                </div>
         
-                <div class="boxs">
-                    <div class="image">
-                        <img src="img/portfolio2.png" alt="">
-                    </div>
-                    <div class="content-part">
-                        <a href="#" class="title">Web Design Proect</a>
-                        <p>UX/UI Design</p>
-                    </div>
-                </div>
         
-                <div class="boxs">
-                    <div class="image">
-                        <img src="img/portfolio3.png" alt="">
-                    </div>
-                    <div class="content-part">
-                        <a href="#" class="title">Web Design Proect</a>
-                        <p>UX/UI Design</p>
-                    </div>
-                </div>
-
-                <div class="boxs">
-                    <div class="image">
-                        <img src="img/portfolio4.png" alt="">
-                    </div>
-                    <div class="content-part">
-                        <a href="#" class="title">Web Design Proect</a>
-                        <p>UX/UI Design</p>
-                    </div>
-                </div>
-            </div>
-            <div class="slider">
-                <i class="fa-solid fa-chevron-left"></i>
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
         </section>
 
 
@@ -335,7 +410,10 @@
                     <p>Address: Charlotte, North Carolina, United</p>
                 </div>
             </div>
+            <br>
+            
             <hr>
+
             <div class="social-icon">
                 <ul>
                     <li><i class="fa-brands fa-facebook-f"></i></li>
@@ -343,14 +421,39 @@
                     <li><i class="fa-brands fa-instagram"></i></li>
                     <li><i class="fa-brands fa-youtube"></i></li>
                 </ul>
-                
+
                 <div class="copy-right">
                     &#169; 2020 - All Right Reserved
                 </div>
             </div>
            </footer>   
 
-
            <script type="text/javascript" src="js/script.js"></script> 
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script type="text/javascript">
+		$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots: false,
+    stagePadding: 50,
+    responsive:{
+        0:{
+            items:1
+        },
+        300:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1200:{
+            items:4
+        }
+    }
+})
+	</script>
 </body>
 </html>
